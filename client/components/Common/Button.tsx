@@ -1,13 +1,12 @@
-interface ButtonProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
-export default function Button({ children, className = '' }: ButtonProps) {
+export default function Button({ children, className, ...props }: React.ComponentProps<'button'>) {
   const defaultClassName = "font-semibold rounded-xl px-5 py-3 bg-blue-500 cursor-pointer";
 
+  const combinedClassName = className
+    ? `${defaultClassName} ${className}`
+    : defaultClassName;
+
   return (
-    <button className={[defaultClassName, className].join(' ')}>
+    <button className={combinedClassName} {...props}>
       {children}
     </button>
   );

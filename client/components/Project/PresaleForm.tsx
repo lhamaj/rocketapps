@@ -1,10 +1,16 @@
+'use client';
+
 import { mdiHeart } from "@mdi/js";
 import Icon from "@mdi/react";
 import Button from "@/components/Common/Button";
 
 const NETWORK_FEE = 5;
 
-export default function PresaleForm() {
+interface PresaleFormProps {
+  handleSubmit: () => void;
+}
+
+export default function PresaleForm({ handleSubmit }: PresaleFormProps) {
   return (
     <div className="text-center">
       <Icon path={mdiHeart} size="3em" className="inline text-purple-400 mb-6" />
@@ -20,7 +26,12 @@ export default function PresaleForm() {
         </p>
       </div>
 
-      <Button className="bg-purple-500 w-1/2 mx-auto block mb-2">Start Presale</Button>
+      <Button
+        className="bg-purple-500 w-1/2 mx-auto block mb-2"
+        onClick={handleSubmit}
+      >
+        Start Presale
+      </Button>
 
       <small className="text-gray-400">A small network fee (~${NETWORK_FEE}) applies to launch the presale</small>
     </div>

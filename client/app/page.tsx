@@ -1,9 +1,4 @@
-import StepWrapper from "@/components/Project/StepWrapper";
-import IdeaForm from "@/components/Project/IdeaForm";
-import Presale from "@/components/Project/Presale";
-import TradingBox from "@/components/Project/TokenInfo";
-import AppBox from "@/components/Project/AppInfo";
-import ShareBox from "@/components/Project/SharingTools";
+import ProjectWizard from "@/components/Project/ProjectWizard";
 
 export default function HomePage() {
   return (
@@ -18,23 +13,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      <StepWrapper><IdeaForm /></StepWrapper>
-
-      <StepWrapper title="Start Presale">
-        <Presale />
-      </StepWrapper>
-
-      <StepWrapper title="Launch Token">
-        <TradingBox />
-      </StepWrapper>
-
-      <StepWrapper title="Build Your App">
-        <AppBox />
-      </StepWrapper>
-
-      <StepWrapper title="Share & Go Viral!">
-        <ShareBox />
-      </StepWrapper>
+      <ProjectWizard />
     </div>
   );
 }
