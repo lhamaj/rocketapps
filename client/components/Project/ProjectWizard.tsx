@@ -50,7 +50,7 @@ export default function ProjectWizard() {
       </StepWrapper>
 
       <StepWrapper title="Start Presale" isComplete={project.stage > 2}>
-        <PresaleForm handleSubmit={handelPresaleSubmit} />
+        {project.stage === 2 && <PresaleForm handleSubmit={handelPresaleSubmit} />}
         {project.stage > 2 && (
           <div className="flex">
             <Icon path={mdiCheckCircle} size="1.5em" className="text-green-300 inline-block me-2" />
@@ -59,11 +59,9 @@ export default function ProjectWizard() {
         )}
       </StepWrapper>
 
-
       <StepWrapper title="Presale is Live!">
         <PresaleInfo />
       </StepWrapper>
-
 
       <StepWrapper title="Token is Live!">
         <TradingBox />
