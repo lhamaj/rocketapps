@@ -1,8 +1,7 @@
 'use client';
 
-import { mdiArrowRight, mdiLinkVariant } from "@mdi/js";
+import { mdiLinkVariant } from "@mdi/js";
 import Icon from "@mdi/react";
-import LinkButton from "../Common/LinkButton";
 
 const socialLinks = [{
   id: 'x',
