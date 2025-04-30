@@ -27,7 +27,7 @@ export default function PresaleInfo() {
 
       <p className="mb-3 text-gray-400">Send ETH to following to participate</p>
 
-      <button className="w-full lg:w-3/4 mx-auto p-3 rounded-2xl bg-slate-700 flex justify-between items-center break-all cursor-pointer">
+      <button className="flex justify-between items-center break-all w-full lg:w-3/4 mx-auto p-3 rounded-2xl bg-slate-600 hover:bg-slate-500 transition cursor-pointer">
         0x1234567890abcdef1234567890abcdef12345678
 
         <Icon path={mdiContentCopy} size="1em" className="ms-3" />

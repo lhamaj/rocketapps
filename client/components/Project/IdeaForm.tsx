@@ -14,7 +14,7 @@ export default function IdeaForm({ handleSubmit }: IdeaFormProps) {
     <div>
       <textarea
         onChange={e => setText(e.target.value)}
-        className="w-full rounded-xl p-5 bg-slate-700 placeholder:text-slate-500 mb-2"
+        className="w-full rounded-xl p-5 bg-black placeholder:text-slate-400 mb-2"
         placeholder={placeholderText}
       />
 

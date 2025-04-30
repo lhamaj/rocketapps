@@ -27,7 +27,7 @@ export default function PresaleForm({ handleSubmit }: PresaleFormProps) {
       </div>
 
       <Button
-        className="bg-purple-500 w-1/2 mx-auto block mb-2"
+        className="bg-purple-500 hover:bg-purple-600 w-full mb-2"
         onClick={handleSubmit}
       >
         Start Presale

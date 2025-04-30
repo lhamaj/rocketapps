@@ -14,7 +14,7 @@ export default function StepWrapper({
   return (
     <div className={`${isComplete ? 'bg-green-900 py-3' : 'bg-slate-800'} mb-6 p-6 rounded-xl`}>
       {title && !isComplete && (
-        <h2 className="text-gray-400 text-2xl font-semibold">{title}</h2>
+        <h2 className="text-gray-400 text-xl font-semibold">{title}</h2>
       )}
 
       {children}

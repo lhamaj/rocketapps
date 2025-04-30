@@ -31,3 +31,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter);
 }
+
+.divider {
+  height: 1px;
+  margin: 25px 0;
+  background: linear-gradient(to right, transparent 0%, rgba(79, 209, 197, 0.4) 50%, transparent 100%);
+}
