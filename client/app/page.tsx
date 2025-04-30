@@ -1,4 +1,4 @@
-import ProjectWizard from "@/components/Project/ProjectWizard";
+import IdeaWizard from "@/components/Idea/IdeaWizard";
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
         </p>
       </div>
 
-      <ProjectWizard />
+      <IdeaWizard />
     </div>
   );
 }

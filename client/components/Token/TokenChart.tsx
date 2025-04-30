@@ -1,4 +1,4 @@
-export default function TokenInfo() {
+export default function TokenChart() {
   return (
     <div className="my-6">
       <div className="bg-black rounded">
